@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    transform: scale(1);
+    width: 252px;
+    height: 234px;
+    margin-top: calc((100vh - 256px)/2);
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(bomba.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    animation: wybuch 0.9s steps(1) infinite;
+}
+
+@keyframes wybuch
+{
+    10% {
+        background-position: -256px 0;
+    }
+    20% {
+        background-position: -512px 0;
+    }
+    30% {
+        background-position: -767px 0;
+    }
+    40% {
+        background-position: -1024px 0;
+    }
+    50% {
+        background-position: 0 -256px;
+    }
+    60% {
+        background-position: -256px -256px;
+    }
+    70% {
+        background-position: -508px -256px;
+    }
+    80% {
+        background-position: -758px -256px;
+    }
+    90% {
+        background-position: -1014px -256px;
+    }
+    100% {
+        background-position: 0 -512px;
+    }
+}
+
+button{
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
+    height: 15%;
+    background-color: greenyellow;
+}
